@@ -1,0 +1,11 @@
+<div class="list-group">
+    <a href="{% url 'index' %}"
+       class="list-group-item list-group-item-action {% if 'страница' in title %}bg-dark text-light{% endif %}">
+        Все статьи</a>
+
+    {% for category in categories %}
+    <a href="{{ category.get_absolute_url }}"
+       class="list-group-item list-group-item-action {% if category.title in title %}bg-dark text-light{% endif %}">
+        {{ category }}</a>
+    {% endfor %}
+</div>

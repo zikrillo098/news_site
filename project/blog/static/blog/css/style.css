@@ -1,0 +1,24 @@
+.dropdown-item:active{
+    background-color: black;
+    text: white;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgb(108 117 125 / 25%);
+    border-color: green;
+}
+.form-select:focus{
+    box-shadow: 0 0 0 0.25rem rgb(108 117 125 / 25%);
+    border-color: green;
+}
+.form-select:target{
+    background-color: black;
+    text: white;
+}
+.form-check-input:focus{
+    border-color: green;
+    box-shadow: 0 0 0 0.25rem rgb(108 117 125 / 25%);
+}
+.form-check-input:checked{
+    background-color: black;
+    border-color: green;
+}
